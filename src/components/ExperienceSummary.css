@@ -1,0 +1,31 @@
+.experience-summary {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .experience-summary h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .experience-summary li {
+    margin-bottom: 20px;
+  }
+  
+  .experience-summary h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .experience-summary p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  

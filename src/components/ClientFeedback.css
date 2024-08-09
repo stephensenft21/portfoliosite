@@ -1,0 +1,27 @@
+.client-feedback {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .client-feedback h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .client-feedback ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .client-feedback li {
+    margin-bottom: 20px;
+  }
+  
+  .client-feedback blockquote {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-style: italic;
+  }
+  

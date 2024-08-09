@@ -1,0 +1,33 @@
+.social-links {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .social-links h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin: 10px 0;
+  }
+  
+  .social-links a {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0056b3;
+  }
+  

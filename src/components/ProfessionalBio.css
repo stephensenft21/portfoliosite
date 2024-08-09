@@ -1,0 +1,17 @@
+.professional-bio {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .professional-bio h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .professional-bio p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  

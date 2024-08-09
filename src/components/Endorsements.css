@@ -1,0 +1,27 @@
+.endorsements {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .endorsements h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .endorsements ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .endorsements li {
+    margin-bottom: 20px;
+  }
+  
+  .endorsements blockquote {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-style: italic;
+  }
+  

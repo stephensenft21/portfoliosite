@@ -1,0 +1,26 @@
+.professional-milestones {
+    padding: 20px;
+    background-color: #ececec;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .professional-milestones h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .professional-milestones ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .professional-milestones li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .professional-milestones p {
+    margin: 5px 0 0 20px;
+  }
+  

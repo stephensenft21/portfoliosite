@@ -1,0 +1,22 @@
+.education-certifications {
+    padding: 20px;
+    background-color: #ececec;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .education-certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .education-certifications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-certifications li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  

@@ -1,0 +1,31 @@
+.tutorials {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .tutorials h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .tutorials ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tutorials li {
+    margin-bottom: 20px;
+  }
+  
+  .tutorials h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .tutorials p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
