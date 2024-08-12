@@ -5,11 +5,10 @@ import ProfessionalMilestones from '../components/ProfessionalMilestones';
 
 const AboutPage = () => {
   return (
-    <div>
-      test 
+    <div> 
       <ProfessionalBio />
        <SkillsOverview />
-        {/* <ProfessionalMilestones />   */}
+        <ProfessionalMilestones />  
     </div>
   );
 };
