@@ -36,3 +36,49 @@
     color: #ffcc00;
   }
   
+  .mobile-menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .navbar-links.mobile {
+      display: flex;
+    }
+  
+    .navbar-links li {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #444;
+    }
+  
+    .navbar-links a {
+      font-size: 1.2rem;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  
+    .navbar-brand {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  
