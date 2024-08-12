@@ -3,18 +3,18 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
-// import ResumePage from './pages/ResumePage'
 import BlogPage from './pages/BlogPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import ResumePage from './pages/ResumePAge'
 
 const RoutesComponent = () => (
   <Routes>
     <Route exact path="/" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
     <Route path="/portfolio" element={<PortfolioPage />} />
-    {/* <Route path="/resume" element={<ResumePage />} /> */}
+    <Route path="/resume" element={<ResumePage />} />
     <Route path="/blog" element={<BlogPage />} />
     <Route path="/testimonials" element={<TestimonialsPage />} />
     <Route path="/contact" element={<ContactPage />} />
