@@ -1,18 +1,11 @@
 import React from 'react';
-import './ClientFeedback.css';
 
 const feedbacks = [
   {
-    name: 'John Doe',
-    feedback: 'Stephen was instrumental in our project’s success. His attention to detail and ability to solve complex problems was invaluable.',
-    position: 'Project Manager at TechCorp'
+    client: 'John Doe',
+    feedback: 'Amazing work! The project was delivered on time and exceeded all expectations.',
   },
-  {
-    name: 'Jane Smith',
-    feedback: 'Working with Stephen was a pleasure. His expertise in full-stack development significantly improved our product’s performance.',
-    position: 'CTO at Innovatech'
-  },
-  // Add more feedback as needed
+  // Add other feedbacks...
 ];
 
 const ClientFeedback = () => {

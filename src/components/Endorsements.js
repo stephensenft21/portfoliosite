@@ -1,18 +1,12 @@
 import React from 'react';
-import './Endorsements.css';
 
 const endorsements = [
   {
-    name: 'Alice Brown',
-    endorsement: 'Stephen’s skill in React and Node.js is top-notch. He’s a developer you can rely on to deliver quality work.',
-    position: 'Lead Developer at SoftSolutions'
+    endorser: 'Jane Smith',
+    position: 'CTO, TechCorp',
+    endorsement: 'A highly skilled developer with an eye for detail and a passion for delivering quality work.',
   },
-  {
-    name: 'Michael Johnson',
-    endorsement: 'I highly recommend Stephen for any project requiring deep technical expertise and a collaborative approach.',
-    position: 'CEO at WebWorks'
-  },
-  // Add more endorsements as needed
+  // Add other endorsements...
 ];
 
 const Endorsements = () => {
@@ -30,5 +24,5 @@ const Endorsements = () => {
     </div>
   );
 };
-export default Endorsements;
 
+export default Endorsements;

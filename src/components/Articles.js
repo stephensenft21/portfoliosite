@@ -1,18 +1,12 @@
 import React from 'react';
-import './Articles.css';
 
 const articles = [
   {
-    title: 'Exploring the Latest in React 18',
-    summary: 'An in-depth look at the new features and improvements in React 18.',
+    title: 'Understanding React Hooks',
+    excerpt: 'Learn about the power of React Hooks and how they can simplify your component logic.',
     link: '#'
   },
-  {
-    title: 'Handling State Management with Redux',
-    summary: 'A guide to managing complex state in React applications using Redux.',
-    link: '#'
-  },
-  // Add more articles as needed
+  // Add other articles...
 ];
 
 const Articles = () => {

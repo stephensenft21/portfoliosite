@@ -1,21 +1,13 @@
 import React from 'react';
-import './DetailedCaseStudies.css';
 
 const caseStudies = [
   {
-    title: 'Senft Lux Rentals',
-    problem: 'The client needed a scalable platform to manage luxury rentals efficiently.',
-    approach: 'Developed a React frontend with a .NET Core backend, integrating payment processing and booking management.',
-    technologies: ['React', '.NET Core', 'Stripe', 'SQL Server'],
-    outcome: 'Successfully launched with positive client feedback and increasing user adoption.'
-  },
-  {
     title: 'Labor Driven',
-    problem: 'Labor workers needed a reliable job matching service.',
-    approach: 'Built a responsive web app using React and AWS services for backend.',
-    technologies: ['React', 'AWS Cognito', 'Redux', 'Formik'],
-    outcome: 'Improved job matching accuracy and user engagement.'
-  }
+    problem: 'Complex workflow automation',
+    approach: 'Built a scalable microservice architecture using Node.js and Docker.',
+    outcome: 'Reduced processing time by 40%.',
+  },
+  // Add other case studies...
 ];
 
 const DetailedCaseStudies = () => {

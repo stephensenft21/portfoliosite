@@ -2,19 +2,12 @@ import React from 'react';
 
 const experiences = [
   {
-    role: 'Application Engineer',
-    company: 'SCRI/Mckesson',
-    date: 'April 2022 - April 2024',
-    location: 'Nashville, TN (Hybrid)',
-    description: 'Contributed to feature development for StudyCentral, ensuring compliance with healthcare regulations and enhancing application features.'
-  },
-  {
     role: 'Technical Resident/Automation Engineer',
     company: 'HCA Healthcare',
     date: 'October 2021 - April 2022',
-    location: 'Nashville, TN (Hybrid)',
     description: 'Streamlined tasks and implemented enterprise-level automations, saving 146 annual hours in HR.'
   },
+  // Add other experiences...
 ];
 
 const ExperienceSummary = () => {
