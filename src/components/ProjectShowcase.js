@@ -2,11 +2,20 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Senft Lux Rentals',
-    description: 'A luxury property rental platform built with React and Node.js.',
+    title: 'StudyCentral',
+    description: 'An enterprise healthcare CTMS application developed with Angular 15 and .NET Core. Enhanced application features and ensured compliance with healthcare regulations.',
     link: '#'
   },
-  // Add other projects...
+  {
+    title: 'Relevnt App',
+    description: 'Enhanced a social media application through improved user engagement strategies and SSO integration using React Native.',
+    link: '#'
+  },
+  {
+    title: 'Labor Driven Web Application',
+    description: 'Led the development of a high-level web application using React.js, AWS Cognito, and Formik for a labor management platform.',
+    link: '#'
+  }
 ];
 
 const ProjectShowcase = () => {

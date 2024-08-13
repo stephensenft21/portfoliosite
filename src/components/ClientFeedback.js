@@ -2,10 +2,17 @@ import React from 'react';
 
 const feedbacks = [
   {
-    client: 'John Doe',
-    feedback: 'Amazing work! The project was delivered on time and exceeded all expectations.',
+    client: 'John Doe, CTO at Healthcare Corp',
+    feedback: 'Stephen played a crucial role in developing our healthcare application, ensuring compliance and scalability. His attention to detail and problem-solving skills are exceptional.'
   },
-  // Add other feedbacks...
+  {
+    client: 'Jane Smith, Project Manager at Relevnt',
+    feedback: 'Stephen’s expertise in React Native significantly enhanced our app’s user engagement. He is a highly skilled developer who delivers on time.'
+  },
+  {
+    client: 'Mike Johnson, CEO at Labor Driven',
+    feedback: 'Stephen led our web application development with great technical leadership. He managed a complex project with ease and delivered a top-notch product.'
+  }
 ];
 
 const ClientFeedback = () => {

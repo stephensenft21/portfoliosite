@@ -4,9 +4,18 @@ const endorsements = [
   {
     endorser: 'Jane Smith',
     position: 'CTO, TechCorp',
-    endorsement: 'A highly skilled developer with an eye for detail and a passion for delivering quality work.',
+    endorsement: 'Stephen is a highly skilled developer with an eye for detail and a passion for delivering quality work. His contributions to our projects were invaluable.'
   },
-  // Add other endorsements...
+  {
+    endorser: 'Mike Johnson',
+    position: 'CEO, Labor Driven',
+    endorsement: 'Stephen led our technical team with great skill and professionalism. His ability to manage complex projects and deliver on time is outstanding.'
+  },
+  {
+    endorser: 'Emily Davis',
+    position: 'Project Manager, Relevnt',
+    endorsement: 'Stephen’s expertise in mobile development was a game-changer for our app. His work is of the highest quality, and he’s a pleasure to work with.'
+  }
 ];
 
 const Endorsements = () => {

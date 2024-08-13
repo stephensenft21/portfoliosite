@@ -6,7 +6,16 @@ const tutorials = [
     excerpt: 'A step-by-step guide on creating a RESTful API using Node.js and Express.js.',
     link: '#'
   },
-  // Add other tutorials...
+  {
+    title: 'Implementing SSO with React Native',
+    excerpt: 'Learn how to implement Single Sign-On (SSO) in your React Native applications.',
+    link: '#'
+  },
+  {
+    title: 'Optimizing SQL Queries for Performance',
+    excerpt: 'Tips and tricks for improving the performance of your SQL queries, including indexing and query optimization techniques.',
+    link: '#'
+  }
 ];
 
 const Tutorials = () => {

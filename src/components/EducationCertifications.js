@@ -2,11 +2,23 @@ import React from 'react';
 
 const certifications = [
   {
-    title: 'Certified Kubernetes Administrator',
-    institution: 'CNCF',
-    date: 'April 2021',
+    title: 'Vue Mastery Course',
+    institution: 'Vue.js',
+    date: 'March 2021 - April 2021',
+    description: 'Immersive course focusing on efficient application structuring, state management, and SPA development using Vue.js.'
   },
-  // Add other certifications...
+  {
+    title: 'SQL Mastery Course',
+    institution: 'PostgreSQL',
+    date: 'August 2020 - September 2020',
+    description: '5-week professional development course in SQL, mastering database design, data manipulation, and query formulation.'
+  },
+  {
+    title: 'Fullstack Developer',
+    institution: 'Nashville Software School',
+    date: 'February 2019 - February 2020',
+    description: '6-month immersive apprenticeship focusing on JavaScript, HTML5, CSS3, React.js, and RESTful APIs.'
+  }
 ];
 
 const EducationCertifications = () => {
@@ -18,6 +30,7 @@ const EducationCertifications = () => {
           <li key={index}>
             <h4 className="text-xl font-semibold text-blue-600">{certification.title}</h4>
             <p className="text-gray-700">{certification.institution} - {certification.date}</p>
+            <p className="text-gray-600 mt-2">{certification.description}</p>
           </li>
         ))}
       </ul>

@@ -6,7 +6,16 @@ const articles = [
     excerpt: 'Learn about the power of React Hooks and how they can simplify your component logic.',
     link: '#'
   },
-  // Add other articles...
+  {
+    title: 'Azure DevOps for Healthcare Applications',
+    excerpt: 'A deep dive into using Azure DevOps to maintain high coding standards and ensure compliance in healthcare projects.',
+    link: '#'
+  },
+  {
+    title: 'Best Practices for Automating HR Processes',
+    excerpt: 'How to streamline HR operations and reduce SLA times using automation tools like UIPATH.',
+    link: '#'
+  }
 ];
 
 const Articles = () => {
@@ -29,3 +38,4 @@ const Articles = () => {
 };
 
 export default Articles;
+  

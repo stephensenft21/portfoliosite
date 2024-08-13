@@ -2,12 +2,23 @@ import React from 'react';
 
 const caseStudies = [
   {
-    title: 'Labor Driven',
-    problem: 'Complex workflow automation',
-    approach: 'Built a scalable microservice architecture using Node.js and Docker.',
-    outcome: 'Reduced processing time by 40%.',
+    title: 'StudyCentral Development',
+    problem: 'Need for a compliant, scalable healthcare CTMS application.',
+    approach: 'Developed custom UI components using Angular 15, established REST endpoints using .NET Core, and integrated Azure cloud tools for monitoring and compliance.',
+    outcome: 'Enhanced application features while ensuring compliance with healthcare regulations, improving document management and user permission protocols.'
   },
-  // Add other case studies...
+  {
+    title: 'HCA Healthcare Automation',
+    problem: 'Inefficient HR processes leading to delays and increased SLA for candidate onboarding.',
+    approach: 'Streamlined tasks through enterprise-level automation using UIPATH, reducing manual effort and aligning automation with compliance standards.',
+    outcome: 'Saved 146 annual hours in HR, significantly reducing onboarding SLA and improving candidate experience.'
+  },
+  {
+    title: 'Relevnt App Enhancement',
+    problem: 'User engagement and app deployment errors.',
+    approach: 'Implemented SSO integration using Native Modules and enhanced app features through React Native development.',
+    outcome: 'Improved user engagement and reduced app deployment errors, leading to a more efficient update process.'
+  }
 ];
 
 const DetailedCaseStudies = () => {
