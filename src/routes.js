@@ -11,7 +11,7 @@ import ResumePage from './pages/ResumePAge'
 
 const RoutesComponent = () => (
   <Routes>
-    <Route exact path="/portfoliosite" element={<HomePage />} />
+    <Route exact path="/" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
     <Route path="/portfolio" element={<PortfolioPage />} />
     <Route path="/resume" element={<ResumePage />} />
