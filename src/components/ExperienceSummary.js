@@ -1,5 +1,4 @@
 import React from 'react';
-import './ExperienceSummary.css';
 
 const experiences = [
   {
@@ -16,21 +15,18 @@ const experiences = [
     location: 'Nashville, TN (Hybrid)',
     description: 'Streamlined tasks and implemented enterprise-level automations, saving 146 annual hours in HR.'
   },
-  // Add more experiences as needed
 ];
 
 const ExperienceSummary = () => {
   return (
-    <div className="experience-summary mt-3 mb-3">
-      <h2>Professional Experience</h2>
-      <ul>
+    <div className="bg-white p-8 rounded-lg shadow-md">
+      <h3 className="text-2xl font-bold text-gray-800 mb-6">Experience Summary</h3>
+      <ul className="space-y-6">
         {experiences.map((experience, index) => (
           <li key={index}>
-            <h3>{experience.role}</h3>
-            <p><strong>{experience.company}</strong></p>
-            <p>{experience.date}</p>
-            <p>{experience.location}</p>
-            <p>{experience.description}</p>
+            <h4 className="text-xl font-semibold text-blue-600">{experience.role}</h4>
+            <p className="text-gray-700">{experience.company} - {experience.date}</p>
+            <p className="text-gray-600 mt-2">{experience.description}</p>
           </li>
         ))}
       </ul>

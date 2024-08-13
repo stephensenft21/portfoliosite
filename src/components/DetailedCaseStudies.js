@@ -20,17 +20,18 @@ const caseStudies = [
 
 const DetailedCaseStudies = () => {
   return (
-    <div className="detailed-case-studies">
-      <h2>Case Studies</h2>
-      {caseStudies.map((study, index) => (
-        <div key={index} className="case-study">
-          <h3>{study.title}</h3>
-          <p><strong>Problem:</strong> {study.problem}</p>
-          <p><strong>Approach:</strong> {study.approach}</p>
-          <p><strong>Technologies:</strong> {study.technologies.join(', ')}</p>
-          <p><strong>Outcome:</strong> {study.outcome}</p>
-        </div>
-      ))}
+    <div className="mt-12">
+      <h3 className="text-2xl font-bold text-gray-800 mb-6">Detailed Case Studies</h3>
+      <ul className="space-y-6">
+        {caseStudies.map((caseStudy, index) => (
+          <li key={index} className="bg-white p-6 rounded-lg shadow-md">
+            <h4 className="text-xl font-bold text-blue-600">{caseStudy.title}</h4>
+            <p className="text-gray-700 mt-2"><strong>Problem:</strong> {caseStudy.problem}</p>
+            <p className="text-gray-700 mt-2"><strong>Approach:</strong> {caseStudy.approach}</p>
+            <p className="text-gray-700 mt-2"><strong>Outcome:</strong> {caseStudy.outcome}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

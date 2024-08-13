@@ -17,13 +17,13 @@ const feedbacks = [
 
 const ClientFeedback = () => {
   return (
-    <div className="client-feedback mt-3 mb-3">
-      <h2>Client Feedback</h2>
-      <ul>
+    <div className="bg-white p-8 rounded-lg shadow-md">
+      <h3 className="text-2xl font-bold text-gray-800 mb-6">Client Feedback</h3>
+      <ul className="space-y-6">
         {feedbacks.map((feedback, index) => (
           <li key={index}>
-            <blockquote>{feedback.feedback}</blockquote>
-            <p><strong>{feedback.name}</strong> - {feedback.position}</p>
+            <p className="text-gray-700 italic">"{feedback.feedback}"</p>
+            <p className="text-blue-600 mt-2 font-semibold">- {feedback.client}</p>
           </li>
         ))}
       </ul>

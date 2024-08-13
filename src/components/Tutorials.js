@@ -15,21 +15,24 @@ const tutorials = [
   // Add more tutorials as needed
 ];
 
+
 const Tutorials = () => {
-  return (
-    <div className="tutorials mt-3 mb-3">
-      <h2>Tutorials</h2>
-      <ul>
-        {tutorials.map((tutorial, index) => (
-          <li key={index}>
-            <h3>{tutorial.title}</h3>
-            <p>{tutorial.summary}</p>
-            <a href={tutorial.link} className="btn">Read More</a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+    return (
+      <div className="mt-12">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6">Tutorials</h3>
+        <ul className="space-y-6">
+          {tutorials.map((tutorial, index) => (
+            <li key={index} className="bg-white p-6 rounded-lg shadow-md">
+              <h4 className="text-xl font-bold text-blue-600">{tutorial.title}</h4>
+              <p className="text-gray-600 mt-2">{tutorial.excerpt}</p>
+              <a href={tutorial.link} className="text-blue-600 mt-4 inline-block hover:text-blue-700">
+                Read More
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
 
 export default Tutorials;

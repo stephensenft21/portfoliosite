@@ -1,12 +1,12 @@
 import React from 'react';
-import './DownloadableResume.css';
 
 const DownloadableResume = () => {
   return (
-    <div className="downloadable-resume text-center mt-3 mb-3">
-      <h2>Resume</h2>
-      <p>You can download my resume by clicking the button below:</p>
-      <a href="/path/to/stephen-senft-2024.pdf" download className="btn">Download Resume (PDF)</a>
+    <div className="bg-white p-8 rounded-lg shadow-md text-center">
+      <h3 className="text-2xl font-bold text-gray-800 mb-4">Download My Resume</h3>
+      <a href="/resume.pdf" download className="bg-blue-600 text-white py-3 px-6 rounded-md shadow-lg hover:bg-blue-700 transition duration-300">
+        Download PDF
+      </a>
     </div>
   );
 };

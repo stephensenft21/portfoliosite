@@ -30,18 +30,18 @@ const projects = [
 
 const ProjectShowcase = () => {
   return (
-    <div className="project-showcase">
-      <h2>Featured Projects</h2>
-      <div className="projects">
-        {projects.map((project, index) => (
-          <div key={index} className="project">
-            <img src={project.image} alt={project.title} className="project-image" />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} className="project-link">View Project</a>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project, index) => (
+        <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="p-6">
+            <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
+            <p className="text-gray-600 mt-2">{project.description}</p>
+            <a href={project.link} className="text-blue-600 mt-4 inline-block hover:text-blue-700">
+              View Project
+            </a>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };
