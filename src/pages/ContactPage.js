@@ -4,11 +4,15 @@ import SocialLinks from '../components/SocialLinks';
 
 const ContactPage = () => {
   return (
-    <div className="py-20 px-6 bg-gray-100">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Contact Me</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ContactForm />
+    <div className="bg-background min-h-screen p-8">
+      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold text-primary mb-6">Get in Touch</h2>
+
+        {/* Contact Form */}
+        <ContactForm />
+
+        {/* Social Links */}
+        <div className="mt-12">
           <SocialLinks />
         </div>
       </div>

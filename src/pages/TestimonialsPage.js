@@ -1,17 +1,27 @@
 import React from 'react';
+import TestimonialsSlider from '../components/TestimonialsSlider';
 import ClientFeedback from '../components/ClientFeedback';
 import Endorsements from '../components/Endorsements';
 
 const TestimonialsPage = () => {
   return (
-    <div className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Testimonials</h2>
-        <ClientFeedback />
-        <Endorsements />
+    <div className="bg-background min-h-screen p-8">
+      <div className="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold text-primary mb-6">Testimonials</h2>
+        <p className="text-textSecondary mb-6">
+          Here’s what my clients and colleagues have to say about my work.
+        </p>
+
+        {/* Testimonials Slider */}
+        <div className="mt-12">
+          <TestimonialsSlider />
+          <ClientFeedback />
+          <Endorsements />
+        </div>
       </div>
     </div>
   );
 };
 
 export default TestimonialsPage;
+
