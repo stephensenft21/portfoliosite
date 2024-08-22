@@ -37,6 +37,7 @@ module.exports = {
           '0%': { transform: 'translateY(20px)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
+        
         pulse: {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0.7 },
@@ -46,3 +47,36 @@ module.exports = {
   },
   plugins: [],
 };
+
+// module.exports = {
+//   theme: {
+//     extend: {
+//       keyframes: {
+        // fadeIn: {
+        //   '0%': { opacity: '0' },
+        //   '100%': { opacity: '1' },
+        // },
+        // fadeUp: {
+        //   '0%': { opacity: '0', transform: 'translateY(20px)' },
+        //   '100%': { opacity: '1', transform: 'translateY(0)' },
+        // },
+        // slideInLeft: {
+        //   '0%': { transform: 'translateX(-100%)' },
+        //   '100%': { transform: 'translateX(0)' },
+        // },
+        // slideInRight: {
+        //   '0%': { transform: 'translateX(100%)' },
+        //   '100%': { transform: 'translateX(0)' },
+        // },
+//       },
+//       animation: {
+//         fadeIn: 'fadeIn 0.5s ease-out forwards',
+//         fadeUp: 'fadeUp 0.5s ease-out forwards',
+//         slideInLeft: 'slideInLeft 0.7s ease-out forwards',
+//         slideInRight: 'slideInRight 0.7s ease-out forwards',
+//       },
+//     },
+//   },
+//   variants: {},
+//   plugins: [],
+// };

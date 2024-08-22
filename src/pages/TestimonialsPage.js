@@ -1,5 +1,5 @@
 import React from 'react';
-import TestimonialsSlider from '../components/TestimonialsSlider';
+import TestimonialsSlider from '../components/Testimonials/TestimonialsSlider';
 import ClientFeedback from '../components/ClientFeedback';
 import Endorsements from '../components/Endorsements';
 

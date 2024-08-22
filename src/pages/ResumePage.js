@@ -5,20 +5,24 @@ import DownloadableResume from '../components/DownloadableResume';
 
 const ResumePage = () => {
   return (
-    <div className="bg-background min-h-screen p-8">
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold text-primary mb-6">My Resume</h2>
+    <div className="bg-gray-100 min-h-screen p-8 flex items-center justify-center">
+      <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-md animate-fadeIn">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center animate-fadeUp">My Resume</h2>
 
         {/* Downloadable Resume */}
-        <DownloadableResume />
+        <div className="mb-12 text-center">
+          <DownloadableResume />
+        </div>
 
         {/* Experience Summary */}
-        <div className="mt-12">
+        <div className="mt-12 animate-slideInLeft">
+          <h3 className="text-2xl font-semibold text-gray-700 mb-4">Experience Summary</h3>
           <ExperienceSummary />
         </div>
 
         {/* Education and Certifications */}
-        <div className="mt-12">
+        <div className="mt-12 animate-slideInRight">
+          <h3 className="text-2xl font-semibold text-gray-700 mb-4">Education & Certifications</h3>
           <EducationCertifications />
         </div>
       </div>

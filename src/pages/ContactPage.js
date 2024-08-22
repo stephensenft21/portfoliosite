@@ -1,6 +1,8 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
 import SocialLinks from '../components/SocialLinks';
+import LinkedInBadge from '../components/LinkedInBadge'; // LinkedIn Badge component
+import LinkedInShareButton from '../components/LinkedInShareButton'; // LinkedIn Share button component
 
 const ContactPage = () => {
   return (
@@ -10,7 +12,9 @@ const ContactPage = () => {
 
         {/* Contact Form */}
         <ContactForm />
-
+ {/* LinkedIn Badge and Share Button */}
+ <div className="flex flex-col items-center space-y-4">
+        </div>
         {/* Social Links */}
         <div className="mt-12">
           <SocialLinks />

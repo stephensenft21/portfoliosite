@@ -2,6 +2,12 @@ import React from 'react';
 
 const certifications = [
   {
+    title: 'Fullstack Developer',
+    institution: 'Nashville Software School',
+    date: 'February 2019 - February 2020',
+    description: '6-month immersive apprenticeship focusing on JavaScript, HTML5, CSS3, React.js, and RESTful APIs.'
+  },
+  {
     title: 'Vue Mastery Course',
     institution: 'Vue.js',
     date: 'March 2021 - April 2021',
@@ -12,12 +18,6 @@ const certifications = [
     institution: 'PostgreSQL',
     date: 'August 2020 - September 2020',
     description: '5-week professional development course in SQL, mastering database design, data manipulation, and query formulation.'
-  },
-  {
-    title: 'Fullstack Developer',
-    institution: 'Nashville Software School',
-    date: 'February 2019 - February 2020',
-    description: '6-month immersive apprenticeship focusing on JavaScript, HTML5, CSS3, React.js, and RESTful APIs.'
   }
 ];
 

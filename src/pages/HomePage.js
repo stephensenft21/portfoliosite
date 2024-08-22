@@ -1,5 +1,5 @@
 import React from 'react';
-import TestimonialsSlider from '../components/TestimonialsSlider';
+import TestimonialsSlider from '../components/Testimonials/TestimonialsSlider';
 import SkillBar from '../components/SkillBar';
 import ParallaxSection from '../components/ParallaxSection';
 
