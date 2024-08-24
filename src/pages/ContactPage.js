@@ -19,6 +19,7 @@ const ContactPage = () => {
         <div className="mt-12">
           <SocialLinks />
         </div>
+
       </div>
     </div>
   );
