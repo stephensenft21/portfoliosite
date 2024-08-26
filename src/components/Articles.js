@@ -1,38 +1,37 @@
-import React from 'react';
-
-const articles = [
-  {
-    title: 'Understanding React Hooks',
-    excerpt: 'Learn about the power of React Hooks and how they can simplify your component logic.',
-    link: '#'
-  },
-  {
-    title: 'Azure DevOps for Healthcare Applications',
-    excerpt: 'A deep dive into using Azure DevOps to maintain high coding standards and ensure compliance in healthcare projects.',
-    link: '#'
-  },
-  {
-    title: 'Best Practices for Automating HR Processes',
-    excerpt: 'How to streamline HR operations and reduce SLA times using automation tools like UIPATH.',
-    link: '#'
-  }
-];
+import React, { useContext } from 'react';
+import { ArticlesContext } from '../context/ArticlesContext';
+import SkeletonLoader from './SkeletonLoader';
 
 const Articles = () => {
+  const { articles, loading, error } = useContext(ArticlesContext);
+
+  if (error) {
+    return <p className="text-center text-red-500">Error: {error}</p>;
+  }
+
   return (
-    <div className="mt-12">
-      <h3 className="text-2xl font-bold text-gray-800 mb-6">Articles</h3>
-      <ul className="space-y-6">
-        {articles.map((article, index) => (
-          <li key={index} className="bg-white p-6 rounded-lg shadow-md">
-            <h4 className="text-xl font-bold text-blue-600">{article.title}</h4>
-            <p className="text-gray-600 mt-2">{article.excerpt}</p>
-            <a href={article.link} className="text-blue-600 mt-4 inline-block hover:text-blue-700">
-              Read More
-            </a>
-          </li>
-        ))}
-      </ul>
+    <div className="relative bg-fixed bg-cover bg-center h-screen" style={{ backgroundImage: "url('https://source.unsplash.com/featured/?technology,abstract')" }}>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative max-w-7xl mx-auto py-20 px-6">
+        <h3 className="text-4xl font-bold text-white mb-12 text-center">Articles</h3>
+        <ul className="space-y-12">
+          {loading
+            ? Array(5).fill().map((_, index) => <SkeletonLoader key={index} />)
+            : articles.map((article, index) => (
+              <li key={index} className="bg-white p-6 rounded-lg shadow-lg transition transform hover:scale-105 duration-300">
+                <img src={article.imageUrl} alt={article.title} className="w-full h-48 object-cover rounded-t-lg" />
+                <div className="p-4">
+                  <h4 className="text-2xl font-bold text-blue-600">{article.title}</h4>
+                  <p className="text-gray-600 mt-2">{article.excerpt}</p>
+                  <a href={article.link} className="text-blue-600 mt-4 inline-block hover:text-blue-700">
+                    Read More
+                  </a>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   );
 };

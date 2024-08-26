@@ -9,7 +9,7 @@ import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ResumePage from './pages/ResumePAge';
 import BlogPage from './pages/BlogPage';
-import TestimonialsPage from './pages/TestimonialsPage';
+import FeedbackPage from './pages/FeedbackPage';
 import ConnectPage from './pages/ConnectPage';
 import LoginPage from "./pages/LoginPage";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -38,7 +38,7 @@ function App() {
               <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/resume" element={<ResumePage />} />
               <Route path="/blog" element={<BlogPage />} />
-              <Route path="/testimonials" element={<TestimonialsPage />} />
+              <Route path="/feedback" element={<FeedbackPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/connect" element={<ConnectPage />} />
               <Route path="/login" element={<LoginPage />} />
