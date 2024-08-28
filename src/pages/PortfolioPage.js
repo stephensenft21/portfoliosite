@@ -6,43 +6,43 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-  const portfolioItems = [
-    {
-      id: 1,
-      category: 'Web Development',
-      title: 'StudyCentral Development',
-      description: 'Developed custom UI components using Angular 15, established REST endpoints using .NET Core, and integrated Azure cloud tools for monitoring and compliance.',
-      technologies: ['Angular', '.NET Core', 'Azure'],
-    },
-    {
-      id: 2,
-      category: 'Automation',
-      title: 'HCA Healthcare Automation',
-      description: 'Streamlined tasks through enterprise-level automation using UIPATH, reducing manual effort and aligning automation with compliance standards.',
-      technologies: ['UIPATH', 'RPA', '.NET'],
-    },
-    {
-      id: 3,
-      category: 'Mobile Apps',
-      title: 'Relevnt App Enhancement',
-      description: 'Implemented SSO integration using Native Modules and enhanced app features through React Native development, improving user engagement.',
-      technologies: ['React Native', 'SSO', 'Objective-C'],
-    },
-    {
-      id: 4,
-      category: 'Web Development',
-      title: 'Labor Driven Web Application',
-      description: 'Led the development of a high-level web application using React.js, AWS Cognito, and Formik for a labor management platform.',
-      technologies: ['React.js', 'AWS Cognito', 'Formik'],
-    },
-    {
-      id: 5,
-      category: 'UX/UI Development',
-      title: 'Creative Computer Solutions UX/UI Projects',
-      description: 'Worked on UX/UI projects, significantly enhancing user satisfaction and operational efficiency, contributing to a 25% increase in client retention rates.',
-      technologies: ['HTML5', 'CSS3', 'Bootstrap'],
-    },
-  ];
+const portfolioItems = [
+  {
+    id: 1,
+    category: 'Web Development',
+    title: 'StudyCentral Development',
+    description: 'Developed custom UI components using Angular 15, established REST endpoints using .NET Core, and integrated Azure cloud tools for monitoring and compliance.',
+    technologies: ['Angular', '.NET Core', 'Azure'],
+  },
+  {
+    id: 2,
+    category: 'Automation',
+    title: 'HCA Healthcare Automation',
+    description: 'Streamlined tasks through enterprise-level automation using UIPATH, reducing manual effort and aligning automation with compliance standards.',
+    technologies: ['UIPATH', 'RPA', '.NET'],
+  },
+  {
+    id: 3,
+    category: 'Mobile Apps',
+    title: 'Relevnt App Enhancement',
+    description: 'Implemented SSO integration using Native Modules and enhanced app features through React Native development, improving user engagement.',
+    technologies: ['React Native', 'SSO', 'Objective-C'],
+  },
+  {
+    id: 4,
+    category: 'Web Development',
+    title: 'Labor Driven Web Application',
+    description: 'Led the development of a high-level web application using React.js, AWS Cognito, and Formik for a labor management platform.',
+    technologies: ['React.js', 'AWS Cognito', 'Formik'],
+  },
+  {
+    id: 5,
+    category: 'UX/UI Development',
+    title: 'Creative Computer Solutions UX/UI Projects',
+    description: 'Worked on UX/UI projects, significantly enhancing user satisfaction and operational efficiency, contributing to a 25% increase in client retention rates.',
+    technologies: ['HTML5', 'CSS3', 'Bootstrap'],
+  },
+];
 
 const PortfolioPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -90,7 +90,7 @@ const PortfolioPage = () => {
 
       {/* Modal for showing details */}
       {selectedItem && (
-        <Modal onClose={handleCloseModal}>
+        <Modal isOpen={!!selectedItem} onClose={handleCloseModal}>
           <h2 className="text-xl font-bold mb-4">{selectedItem.title}</h2>
           <p className="mb-4">{selectedItem.description}</p>
           <div>
@@ -107,5 +107,3 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
-
-
