@@ -1,6 +1,6 @@
 import React from 'react';
 import SlackInviteButton from '../components/SlackInviteButton';
-import DiscordJoinButton from '../components/DiscordJoinButton';
+import DiscordJoinButton from '../components/Utils/DiscordJoinButton';
 
 const ConnectPage = () => {
   return (

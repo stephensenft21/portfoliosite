@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
-import ResumePage from './pages/ResumePAge';
 import BlogPage from './pages/BlogPage';
 import CommentPage from './pages/CommentPage';
 import ConnectPage from './pages/ConnectPage';
@@ -21,6 +20,7 @@ import NotFoundPage from './pages/NotFoundPage'; // Optional, but useful
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { NewsProvider } from "./context/NewsContext";
+import ExperiencePage from "./pages/ExperiencePage";
 
 function App() {
   useEffect(() => {
@@ -39,7 +39,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/portfolio" element={<PortfolioPage />} />
-              <Route path="/resume" element={<ResumePage />} />
+              <Route path="/experience" element={<ExperiencePage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/feedback" element={<CommentPage />} />
               <Route path="/contact" element={<ContactPage />} />

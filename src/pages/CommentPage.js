@@ -1,6 +1,6 @@
 import React from 'react';
-import CommentSlider from '../components';
-import ClientFeedback from '../components/ClientFeedback';
+import CommentSlider from '../components/Comment/CommentSlider';
+import ClientFeedback from '../components/Feedback/ClientFeedback';
 import Endorsements from '../components/Endorsements';
 
 const FeedbackPage = () => {

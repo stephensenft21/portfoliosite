@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SlackInviteButton from './SlackInviteButton';
-import DiscordJoinButton from './DiscordJoinButton';
+import DiscordJoinButton from './Utils/DiscordJoinButton';
 import { GitHubIcon, LinkedInIcon } from './IconLibrary'; // Adjust imports if necessary
 
 const Footer = () => {

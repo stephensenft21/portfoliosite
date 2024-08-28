@@ -1,6 +1,6 @@
 import React from 'react';
 
-const caseStudies = [
+const items = [
   {
     title: 'StudyCentral Development',
     problem: 'Need for a compliant, scalable healthcare CTMS application.',
@@ -21,17 +21,17 @@ const caseStudies = [
   }
 ];
 
-const DetailedCaseStudies = () => {
+const StudyList = () => {
   return (
     <div className="mt-12">
       <h3 className="text-2xl font-bold text-gray-800 mb-6">Detailed Case Studies</h3>
       <ul className="space-y-6">
-        {caseStudies.map((caseStudy, index) => (
+        {items.map((e, index) => (
           <li key={index} className="bg-white p-6 rounded-lg shadow-md">
-            <h4 className="text-xl font-bold text-blue-600">{caseStudy.title}</h4>
-            <p className="text-gray-700 mt-2"><strong>Problem:</strong> {caseStudy.problem}</p>
-            <p className="text-gray-700 mt-2"><strong>Approach:</strong> {caseStudy.approach}</p>
-            <p className="text-gray-700 mt-2"><strong>Outcome:</strong> {caseStudy.outcome}</p>
+            <h4 className="text-xl font-bold text-blue-600">{e.title}</h4>
+            <p className="text-gray-700 mt-2"><strong>Problem:</strong> {e.problem}</p>
+            <p className="text-gray-700 mt-2"><strong>Approach:</strong> {e.approach}</p>
+            <p className="text-gray-700 mt-2"><strong>Outcome:</strong> {e.outcome}</p>
           </li>
         ))}
       </ul>
@@ -39,4 +39,4 @@ const DetailedCaseStudies = () => {
   );
 };
 
-export default DetailedCaseStudies;
+export default StudyList;

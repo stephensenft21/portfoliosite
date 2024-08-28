@@ -1,8 +1,8 @@
 import React from 'react';
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/Contact/ContactForm';
 import SocialLinks from '../components/SocialLinks';
-import LinkedInBadge from '../components/LinkedInBadge'; // LinkedIn Badge component
-import LinkedInShareButton from '../components/LinkedInShareButton'; // LinkedIn Share button component
+import LinkedInBadge from '../components/Social/LinkedInBadge'; // LinkedIn Badge component
+import LinkedInShareButton from '../components/Social/LinkedInShareButton'; // LinkedIn Share button component
 
 const ContactPage = () => {
   return (
