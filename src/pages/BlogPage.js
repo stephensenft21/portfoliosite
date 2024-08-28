@@ -1,6 +1,6 @@
 import React from 'react';
-import Articles from '../components/Articles';
 import Tutorials from '../components/Tutorials';
+import NewsList from '../components/NewsList';
 
 const BlogPage = () => {
   return (
@@ -10,7 +10,7 @@ const BlogPage = () => {
         
         {/* Articles */}
         <div className="mt-12">
-          <Articles />
+          <NewsList />
         </div>
 
         {/* Tutorials */}

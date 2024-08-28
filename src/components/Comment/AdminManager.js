@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
-import CreateTestimony from "./CreateTestimony";
-import TestimonialsSlider from "./TestimonialsSlider";
+import CreateTestimony from "./CommentForm";
+import CommentSlider from "./CommentSlider";
 
 // Initial state
 const initialState = {
@@ -54,7 +54,7 @@ const AdminTestimonialManager = () => {
 
   return (
     <div className="min-h-screen bg-background p-6">
-      <CreateTestimony onSubmitTestimony={handleAddTestimonial} />
+      <CommentSlider onSubmitTestimony={handleAddTestimonial} />
 
       <h2 className="text-4xl font-bold text-primary mb-8 text-center animate-slideIn">Manage Testimonials</h2>
       <div className="container mx-auto bg-white p-6 rounded-lg shadow-md">

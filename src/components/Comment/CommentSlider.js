@@ -40,7 +40,7 @@ const testimonials = [
 ];
 
 
-const TestimonialsSlider = () => {
+const CommentSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -70,4 +70,4 @@ const TestimonialsSlider = () => {
   );
 };
 
-export default TestimonialsSlider;
+export default CommentSlider;

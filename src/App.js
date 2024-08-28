@@ -9,17 +9,18 @@ import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ResumePage from './pages/ResumePAge';
 import BlogPage from './pages/BlogPage';
-import FeedbackPage from './pages/FeedbackPage';
+import CommentPage from './pages/CommentPage';
 import ConnectPage from './pages/ConnectPage';
 import LoginPage from "./pages/LoginPage";
 import AdminDashboard from "./pages/AdminDashboard";
-import CreateTestimony from "./components/Testimonials/CreateTestimony";
+import CreateTestimony from "./components/Comment/CommentForm";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage'; // Optional, but useful
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { NewsProvider } from "./context/NewsContext";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,8 @@ function App() {
   return (
     <Router basename="/portfoliosite">
       <AuthProvider>
+        <NewsProvider>
+
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">
@@ -38,7 +41,7 @@ function App() {
               <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/resume" element={<ResumePage />} />
               <Route path="/blog" element={<BlogPage />} />
-              <Route path="/feedback" element={<FeedbackPage />} />
+              <Route path="/feedback" element={<CommentPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/connect" element={<ConnectPage />} />
               <Route path="/login" element={<LoginPage />} />
@@ -49,7 +52,7 @@ function App() {
                     <CreateTestimony />
                   </ProtectedRoute>
                 }
-              />
+                />
               <Route
                 path="/admin/dashboard"
                 element={
@@ -57,12 +60,13 @@ function App() {
                     <AdminDashboard />
                   </ProtectedRoute>
                 }
-              />
+                />
               <Route path="*" element={<NotFoundPage />} /> {/* Handles undefined routes */}
             </Routes>
           </main>
           <Footer />
         </div>
+                </NewsProvider>
       </AuthProvider>
     </Router>
   );

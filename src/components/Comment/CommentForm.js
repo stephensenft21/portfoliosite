@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Rating from '@mui/material/Rating';
 
-const CreateTestimony = ({ onSubmitTestimony }) => {
+const CreateComment = ({ onSubmitComment }) => {
   const [client, setClient] = useState("");
   const [feedback, setFeedback] = useState("");
   const [rating, setRating] = useState(0);
@@ -40,7 +40,7 @@ const CreateTestimony = ({ onSubmitTestimony }) => {
       return;
     }
 
-    const newTestimonial = {
+    const newComment = {
       client,
       feedback,
       rating,
@@ -48,7 +48,7 @@ const CreateTestimony = ({ onSubmitTestimony }) => {
       approved: false,
     };
 
-    onSubmitTestimony(newTestimonial);
+    onSubmitComment(newComment);
     setClient("");
     setFeedback("");
     setRating(0);
@@ -58,7 +58,7 @@ const CreateTestimony = ({ onSubmitTestimony }) => {
 
   return (
     <div className="container mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-4xl font-bold text-primary mb-6 text-center animate-slideIn">Submit Your Testimony</h2>
+      <h2 className="text-4xl font-bold text-primary mb-6 text-center animate-slideIn">Submit Your Comment</h2>
       <form onSubmit={handleSubmit}>
         {error && <p className="text-red-600 mb-4">{error}</p>}
         <div className="mb-4">
@@ -100,4 +100,4 @@ const CreateTestimony = ({ onSubmitTestimony }) => {
   );
 };
 
-export default CreateTestimony;
+export default CreateComment;

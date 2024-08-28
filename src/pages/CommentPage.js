@@ -1,5 +1,5 @@
 import React from 'react';
-import FeedbackSlider from '../components/FeedbackSlider/FeedbackSlider';
+import CommentSlider from '../components';
 import ClientFeedback from '../components/ClientFeedback';
 import Endorsements from '../components/Endorsements';
 
@@ -14,7 +14,7 @@ const FeedbackPage = () => {
 
         {/* Testimonials Slider */}
         <div className="mt-12">
-          <FeedbackSlider />
+          <CommentSlider/>
           <ClientFeedback />
           <Endorsements />
         </div>
