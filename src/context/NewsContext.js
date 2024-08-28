@@ -1,42 +1,40 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
-import * as rssParser from 'react-native-rss-parser';
 
-// 1. Create the context with a descriptive name
 export const NewsContext = createContext();
 
-// 2. Create the provider component
 export const NewsProvider = ({ children }) => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const API_KEY = '32781bab-418f-437f-baa8-be4357aacc35'; // Your Perigon API key
+  const API_URL = `https://api.perigon.io/v1/articles?categories=technology&apiKey=${API_KEY}`;
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        // Replace `username` with the Medium username you want to fetch articles from
-        const response = await axios.get('https://medium.com/feed/@username');
-        const rss = await rssParser.parse(response.data);
-        
-        const fetchedNews = rss.items.map(item => ({
-          title: item.title,
-          excerpt: item.summary,
-          link: item.links[0].url,
-          imageUrl: item.content.includes('<img') ? item.content.match(/<img.*?src="(.*?)"/)[1] : 'https://source.unsplash.com/featured/?medium'
-        }));
-
-        setNews(fetchedNews);
+        const response = await axios.get(API_URL);
+        setNews(response.data.articles.map(article => ({
+          id: article.id, // Unique identifier
+          title: article.title,
+          imageUrl: article.image_url,
+          excerpt: article.summary,
+          link: article.url,
+          isBlog: false, // Adjust as necessary
+        })));
+        setLoading(false);
       } catch (error) {
-        console.error('Error fetching Medium news:', error);
-      } finally {
+        setError(error.message);
         setLoading(false);
       }
     };
 
     fetchNews();
-  }, []);
+  }, [API_URL]);
 
   return (
-    <NewsContext.Provider value={{ news, loading }}>
+    <NewsContext.Provider value={{ news, loading, error }}>
       {children}
     </NewsContext.Provider>
   );
