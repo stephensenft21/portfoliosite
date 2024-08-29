@@ -1,15 +1,19 @@
 import React from 'react';
+import { useSpring, animated } from '@react-spring/web';
 
 const SkeletonLoader = () => {
+  const animation = useSpring({
+    from: { opacity: 0.5 },
+    to: { opacity: 1 },
+    config: { duration: 1000 },
+    loop: { reverse: true },
+  });
+
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <div className="w-full h-48 bg-gray-300 rounded-t-lg animate-pulse"></div>
-      <div className="p-4 space-y-4">
-        <div className="h-6 bg-gray-300 rounded w-3/4 animate-pulse"></div>
-        <div className="h-4 bg-gray-300 rounded w-5/6 animate-pulse"></div>
-        <div className="h-4 bg-gray-300 rounded w-1/2 animate-pulse"></div>
-      </div>
-    </div>
+    <animated.div
+      style={animation}
+      className="w-full h-48 bg-gray-300 rounded-lg"
+    ></animated.div>
   );
 };
 

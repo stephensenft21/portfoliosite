@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const VideosContext = createContext();
+export const VideoContext = createContext();
 
 export const VideosProvider = ({ children }) => {
   const [videos, setVideos] = useState([]);
@@ -34,8 +34,8 @@ export const VideosProvider = ({ children }) => {
   }, [API_URL]);
 
   return (
-    <VideosContext.Provider value={{ videos, loading, error }}>
+    <VideoContext.Provider value={{ videos, loading, error }}>
       {children}
-    </VideosContext.Provider>
+    </VideoContext.Provider>
   );
 };

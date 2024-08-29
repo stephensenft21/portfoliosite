@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsList from '../components/NewsList';
 import VideoList from '../components/VideoList';
+import MediaPlayer from '../components/MediaPlayer';
 
 const BlogPage = () => {
   return (
@@ -17,7 +18,7 @@ const BlogPage = () => {
         {/* Tutorials Section */}
         <section className="mt-12">
           <h3 className="text-2xl font-semibold text-primary mb-4">Tech Tutorials</h3>
-          <VideoList />
+          <MediaPlayer />
         </section>
       </div>
     </div>
