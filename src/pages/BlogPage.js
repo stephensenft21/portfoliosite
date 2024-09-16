@@ -19,6 +19,7 @@ const BlogPage = () => {
         <section className="mt-12">
           <h3 className="text-2xl font-semibold text-primary mb-4">Tech Tutorials</h3>
           <MediaPlayer />
+          <VideoList/>
         </section>
       </div>
     </div>
