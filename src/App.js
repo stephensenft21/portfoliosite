@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
+import MainPage from "./pages/MainPage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import BlogPage from "./pages/BlogPage";
@@ -36,7 +36,7 @@ function App() {
               <Navbar />
               <main className="flex-grow">
                 <Routes>
-                  <Route path="/" element={<HomePage />} />
+                  <Route path="/intro" element={<MainPage />} />
                   <Route path="/about" element={<AboutPage />} />
                   <Route path="/portfolio" element={<PortfolioPage />} />
                   <Route path="/experience" element={<ExperiencePage />} />

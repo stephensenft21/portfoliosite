@@ -3,7 +3,7 @@ import TestimonialsSlider from '../components/Comment/CommentSlider';
 import SkillBar from '../components/SkillBar';
 import ParallaxSection from '../components/ParallaxSection';
 
-const HomePage = () => {
+const MainPage = () => {
   return (
     <div>
       <section className="bg-background min-h-screen flex flex-col justify-center items-center text-center px-4">
@@ -46,4 +46,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default MainPage;
