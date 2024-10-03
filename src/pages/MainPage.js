@@ -9,10 +9,10 @@ const MainPage = () => {
       <section className="bg-background min-h-screen flex flex-col justify-center items-center text-center px-4">
         <div className="animate-fadeIn" data-aos="fade-down">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4">
-            Stephen Senft - Full Stack Developer
+            Stephen Senft - Full-Stack Developer
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-textSecondary max-w-2xl mx-auto">
-            Dynamic Full Stack Developer based in Nashville, specializing in scalable, secure, and compliant healthcare applications.
+            Dynamic Full-Stack Developer based in Nashville, specializing in scalable, secure, and compliant healthcare applications.
           </p>
           <div className="mt-6">
             <a href="#portfolio" className="inline-block bg-highlight text-white py-2 px-4 sm:py-3 sm:px-6 rounded-md shadow-lg hover:bg-accent hover:animate-bounce transition duration-300">
