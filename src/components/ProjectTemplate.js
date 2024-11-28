@@ -3,12 +3,12 @@ import React from 'react';
 const projects = [
   {
     title: 'StudyCentral',
-    description: 'An enterprise healthcare CTMS application developed with Angular 15 and .NET Core. Enhanced application features and ensured compliance with healthcare regulations.',
+    description: 'An enterprise healthcare CTMS application developed with Angular 15 and .NET Core 6-8. Enhanced application features creating user interfaces for our clients.  ensured compliance with healthcare regulations.',
     link: '#'
   },
   {
     title: 'Relevnt App',
-    description: 'Enhanced a social media application through improved user engagement strategies and SSO integration using React Native.',
+    description: ' Created new social media application interfaces through improved user engagement strategies and SSO integration using React Native.',
     link: '#'
   },
   {
@@ -18,7 +18,7 @@ const projects = [
   }
 ];
 
-const ProjectShowcase = () => {
+const ProjectTemplate = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project, index) => (
@@ -39,4 +39,4 @@ const ProjectShowcase = () => {
   );
 };
 
-export default ProjectShowcase;
+export default ProjectTemplate;

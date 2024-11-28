@@ -27,7 +27,7 @@ const milestones = [
   }
 ];
 
-const ProfessionalMilestones = () => {
+const DeveloperMilestones = () => {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-gray-800 mb-6">Professional Milestones</h2>
@@ -44,4 +44,4 @@ const ProfessionalMilestones = () => {
   );
 };
 
-export default ProfessionalMilestones;
+export default DeveloperMilestones;
