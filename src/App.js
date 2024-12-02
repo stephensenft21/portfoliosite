@@ -16,7 +16,7 @@ import CreateTestimony from "./components/Comment/CommentForm";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
 import ContactPage from "./pages/ContactPage";
-import GlobalImportsProvider from './context/GlobalImportsContext'
+  // import GlobalImportsProvider from './context/GlobalImportsContext'
 import NotFoundPage from "./pages/NotFoundPage"; // Optional, but useful
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,7 +31,7 @@ function App() {
   return (
     <Router basename="/portfoliosite">
       <AuthProvider>
-        <GlobalImportsProvider>
+        {/* <GlobalImportsProvider> */}
           <NewsProvider>
             <VideosProvider>
               <div className="flex flex-col min-h-screen">
@@ -71,7 +71,7 @@ function App() {
               </div>
             </VideosProvider>
           </NewsProvider>
-        </GlobalImportsProvider>
+        {/* </GlobalImportsProvider> */}
       </AuthProvider>
     </Router>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProfessionalBio.css';
 
-const ProfessionalBio = () => {
+const DeveloperBio = () => {
   return (
     <div className="professional-bio">
       <h2>About Me</h2>
@@ -15,4 +15,4 @@ const ProfessionalBio = () => {
   );
 };
 
-export default ProfessionalBio;
+export default DeveloperBio;
