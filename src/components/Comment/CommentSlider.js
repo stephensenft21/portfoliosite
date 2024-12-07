@@ -31,20 +31,22 @@ const testimonials = [
     rating: 5,
   },
   {
-    client: 'Michael Brown, Lead Developer at TravelCo',
-    feedback: 'Stephen is a reliable and knowledgeable developer. His contributions to our travel booking platform were invaluable.',
-    date: 'July 18, 2024',
-    project: 'Travel Booking Platform',
-    rating: 4,
+    client: 'Leah Roushar, CEO & Founder at Labor Driven LLC',
+    feedback: "Stephen has worked as a full-stack developer at Labor Driven on a periodic contract basis since 2020. During his time with us he has consistently demonstrated exceptional technical skills, a deep understanding of software development principles, and an unwavering commitment to delivering high-quality solutions.Stephen possesses proficiency in React.js, NPM, Formik, Redux, Jest, CSS, React-Bootstrap & Material UI. As well as Node.js, Express.js, MySQL, Stripe, AWS, & AWS CodeCommit. He has effectively utilized these skills to create a beautiful and intuitive user experience, reduce server downtime & improve performance. In addition to his technical expertise is his ability to approach complex problems with innovative solutions. Stephen consistently exhibits strong problem-solving skills, whether it's troubleshooting challenging issues or designing elegant new features. His proactive approach to learning and adapting to new technologies ensures that he stays at the bleeding edge of industry advancements. One of Stephen’s standout qualities is his ability to lead. He is a collaborative team player who communicates effectively with both technical and non-technical stakeholders. He is known at Labor Driven for his kindness, mentorship, and willingness to share knowledge, which greatly contributes to the professional growth of peers and fosters a positive team environment. Stephen is an incredible asset to any organization he chooses to join. He combines technical acumen with strong interpersonal skills, making him an obvious choice for roles that require both advanced engineering capabilities and effective team collaboration.",
+    date: 'August 29, 2024',
+    project: 'Labor Driven',
+    link:'https://www.labordriven.com',
+    rating: 5,
   },
 ];
+
 
 
 const CommentSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
