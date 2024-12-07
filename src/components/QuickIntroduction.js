@@ -13,4 +13,4 @@ const QuickIntroduction = () => {
   );
 };
 
-export default QuickIntroduction;
+export default QuickIntroduction; 

@@ -85,9 +85,9 @@ const Navbar = () => {
             <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="hover:text-highlight transition duration-300">
               <GitHubIcon size={24} />
             </a>
-            <a href="https://slack.com/your-slack" target="_blank" rel="noopener noreferrer" className="hover:text-highlight transition duration-300">
+            {/* <a href="https://slack.com/your-slack" target="_blank" rel="noopener noreferrer" className="hover:text-highlight transition duration-300">
               <SlackIcon size={24} color="#4A154B" />
-            </a>
+            </a> */}
           </div>
         </div>
       )}

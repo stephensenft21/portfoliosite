@@ -4,6 +4,7 @@ import { FaGoogle } from 'react-icons/fa'; // React icons for social media logos
 
 const LoginPage = () => {
   const { loginWithGoogle } = useAuth();
+  
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-6">
