@@ -1,7 +1,6 @@
 import React from 'react';
 import CommentSlider from '../components/Comment/CommentSlider';
-import ClientFeedback from '../components/Feedback/ClientFeedback';
-import Endorsements from '../components/Endorsements';
+import Endorsements from '../components/Endorsment/Endorsements';
 
 const FeedbackPage = () => {
   return (
@@ -15,7 +14,6 @@ const FeedbackPage = () => {
         {/* Testimonials Slider */}
         <div className="mt-12">
           <CommentSlider/>
-          <ClientFeedback />
           <Endorsements />
         </div>
       </div>

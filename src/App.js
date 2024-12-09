@@ -23,6 +23,8 @@ import "aos/dist/aos.css";
 import { NewsProvider } from "./context/NewsContext";
 import ExperiencePage from "./pages/ExperiencePage";
 import { VideosProvider } from "./context/VideoContext";
+import FeedbackForm from "./components/Feedback/FeedBackForm";
+import EndorsementForm from "./components/Endorsment/EndorsementForm";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -47,6 +49,9 @@ function App() {
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/connect" element={<ConnectPage />} />
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/add-form-endorsments" element={<EndorsementForm />} />
+                    <Route path="/add-form-feedback" element={<FeedbackForm />} />
+
                     <Route
                       path="/create-testimony"
                       element={
